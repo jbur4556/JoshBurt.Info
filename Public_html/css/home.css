@@ -1,0 +1,33 @@
+body
+{
+	margin:0px;
+	background: white;
+	color: black;
+}
+
+header
+{
+	position:fixed;
+	width:100%;
+	height:10vh;
+	background-color: #E2E2E2;
+}
+
+#section1
+{
+	padding-top:10vh;
+	background-color: #247BA0;
+	height:90vh;
+}
+
+#section2
+{
+	background-color: #0A2463;
+	height:90vh;
+}
+
+#section3
+{
+	background-color: #F15025;
+	height:90vh;
+}
