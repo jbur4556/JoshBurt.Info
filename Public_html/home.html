@@ -5,6 +5,7 @@
 	<title>Josh Burt</title> 
 	<meta name = "description" content = "Josh Burt's Portfolio Page">
 	<link type = "text/css" rel = "stylesheet" href = "css/home.css">
+	<script src="js/home.js"></script>
 	<!--
 	<script src="index.js"></script>
 	-->
@@ -12,7 +13,14 @@
 
 <body>
 	<header>
-		<img src="assets/images/sig.png" alt="Logo" style="height: 100%;">
+		<div id="headerDiv">
+			<img class="headerImg"src="assets/images/sig.png" alt="Logo">
+			<ul id="headerLinksUL">
+				<a class="headerLinks" onclick="goToSection('sectionTop')">Section 1</a>
+				<a class="headerLinks" onclick="goToSection('section2')">Section 2</a>
+				<a class="headerLinks" onclick="goToSection('section3')">Section 3</a>
+			</ul>
+		</div>
 	</header>
 	
 	<nav>
@@ -20,10 +28,13 @@
 	
 	<article>
 		<section id="sectionTop">
+			<h1 class="centerBold">BROTHER!!!!!!</h1>
 		</section>
 		<section id="section2">
+			<h1 class="centerBold" style="color:white">Welcome to...</h1>
 		</section>
 		<section id="section3">
+			<h1 class="centerBold" style="color:white">MY SITE!!!</h1>
 		</section>
 	</article>
 	
