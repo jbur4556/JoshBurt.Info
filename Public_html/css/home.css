@@ -152,13 +152,12 @@ ul
 	#dropDownDiv
 	{
 		width:100%;
-		position:;
 		display:inline-block;
 	}
 	
 	#dropDownButton
 	{
-		display:inline;
+		display:inline-block;
 		padding-left:2%;
 		margin-top:calc(var(--headerSize)/2.5);
 	}
