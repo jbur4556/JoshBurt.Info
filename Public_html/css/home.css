@@ -1,7 +1,7 @@
 :root
 {
-	--sectionSize: 95vh;
-	--headerSize: 5vh;
+	--sectionSize: 90vh;
+	--headerSize: 10vh;
 }
 
 body, html
@@ -29,6 +29,16 @@ header
 	background-color: #E2E2E2;
 }
 
+section
+{
+	height:var(--sectionSize);
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 ul
 {
 	margin:0px;
@@ -47,7 +57,13 @@ ul
 	text-align:center;
 }
 
-
+.hamburger
+{
+	width: 20px;
+	height: 3px;
+	background-color: black;
+	margin: 3px 0;
+}
 
 .headerLinks
 {
@@ -61,6 +77,11 @@ ul
 .headerLinks:hover
 {
 	color: #a0a0a0;
+}
+
+.mobileOnly
+{
+	display:none;
 }
 
 #headerDiv
@@ -79,55 +100,73 @@ ul
 	line-height:var(--headerSize);
 }
 
+#dropDownButton
+{
+	display:none;
+	float:left;
+}
+
 #sectionTop
 {	
 	padding-top:var(--headerSize); /*Match Header height if fixed*/
-	height:var(--sectionSize);
 	
 	background-image: url(../assets/images/sig.png);
 	background-color: #247BA0;	
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 #section2
 {
-	height:var(--sectionSize);
-
 	background-image: url(../assets/images/sigBlack.png);
 	background-color: #F15025;	
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
+
 
 #section3
 {
-	height:var(--sectionSize);
-
 	background-image: url(../assets/images/sig.png);
 	background-color: #0A2463;	
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 @media(max-width:1000px)
 {
-	.headerLinks
+	section
 	{
-		visibility:hidden; 	
+		background-attachment: scroll;
+		background-position: center;
+		background-repeat: repeat;
+	}
+	#headerLinksUL
+	{
+		display:none; 	
 	}
 	
 	.headerImg
 	{
+		float:none;
 		display:block;
 		height:100%;
-		padding-left:auto;
-		padding-right:auto;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	#dropDownDiv
+	{
+		width:100%;
+		position:;
+		display:inline-block;
+	}
+	
+	#dropDownButton
+	{
+		display:inline;
+		padding-left:2%;
+		margin-top:calc(var(--headerSize)/2.5);
+	}
+	
+	#headerDiv:hover  #headerLinksUL
+	{
+		display:block;
+		background-color:#E2E2E2;
+		width:auto;
 	}
 }
