@@ -134,11 +134,7 @@ ul
 		background-attachment: scroll;
 		background-position: center;
 		background-repeat: repeat;
-	}
-	#headerLinksUL
-	{
-		display:none; 	
-	}
+	}	
 	
 	.headerImg
 	{
@@ -147,6 +143,11 @@ ul
 		height:100%;
 		margin-left:auto;
 		margin-right:auto;
+	}	
+	
+	#headerLinksUL
+	{
+		display:none; 	
 	}
 	
 	#dropDownDiv
@@ -168,4 +169,10 @@ ul
 		background-color:#E2E2E2;
 		width:auto;
 	}
+	
+	#headerDiv:hover  .headerImg
+	{
+		display:none;
+	}
+	
 }
