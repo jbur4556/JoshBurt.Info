@@ -2,6 +2,7 @@
 {
 	--sectionSize: 90vh;
 	--headerSize: 10vh;
+	--halfHeaderSize: 5vh;
 }
 
 body, html
@@ -36,18 +37,13 @@ section
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
+	/*background-size:auto 100%;*/
 	background-size: cover;
 }
 
 ul
 {
 	margin:0px;
-}
-
-.headerImg
-{
-	height:100%;
-	float:left;
 }
 
 .centerBold
@@ -59,19 +55,18 @@ ul
 
 .hamburger
 {
-	width: 20px;
-	height: 3px;
+	width: calc(var(--headerSize)/2);
+	height: calc(var(--headerSize)/10);
 	background-color: black;
-	margin: 3px 0;
+	margin: calc(var(--headerSize)/25) 0;
 }
 
 .headerLinks
 {
-	display:inline;
 	color:black;
 	text-decoration: none;
 	font-size:150%;
-	margin:7%;
+	padding:7%;
 }
 
 .headerLinks:hover
@@ -84,6 +79,29 @@ ul
 	display:none;
 }
 
+.InlineLI
+{
+	display:inline;
+}
+
+#underline
+{
+	bottom:3%;
+	height: .25rem;
+	width: 10vw;
+	margin: 0;
+	background: black;
+	border: none;
+	margin-left:0%;
+}
+
+#headerImg
+{		
+	position:absolute;
+	height:100%;
+	left:0%;
+}
+
 #headerDiv
 {
 	height:100%;
@@ -92,12 +110,21 @@ ul
 
 #headerLinksUL
 {
-	margin:0px;
-	padding:0px;
-	display:inline-block;
 	height:100%;
 	width:50%;
+	margin:0 auto;
+	padding:0px;
 	line-height:var(--headerSize);
+}
+
+#headerLinkLeft
+{
+	margin-left:0%;
+}
+
+#headerLinkRight
+{
+	margin-right:0%;
 }
 
 #dropDownButton
@@ -135,15 +162,22 @@ ul
 		background-position: center;
 		background-repeat: repeat;
 	}	
+
 	
-	.headerImg
+	#headerImg
 	{
+		position:static;
 		float:none;
 		display:block;
 		height:100%;
 		margin-left:auto;
 		margin-right:auto;
 	}	
+	
+	#headerImg.mobileHide
+	{
+		display:none;
+	}
 	
 	#headerLinksUL
 	{
@@ -158,12 +192,21 @@ ul
 	
 	#dropDownButton
 	{
+		height:100%;
 		display:inline-block;
-		padding-left:2%;
-		margin-top:calc(var(--headerSize)/2.5);
+		position:absolute;
+		left:2%;
+		margin-top:2.7vh  /* (headerHeight/2) - (hamburger.margin*2 + hamburger.height + hamburger.height/2) */
 	}
 	
-	#headerDiv:hover  #headerLinksUL
+	#headerLinksUL.mobileShow
+	{
+		display:block;
+		background-color:#E2E2E2;
+		width:auto;
+	}
+	
+	/*#headerDiv:hover  #headerLinksUL.mobileShow
 	{
 		display:block;
 		background-color:#E2E2E2;
@@ -173,6 +216,6 @@ ul
 	#headerDiv:hover  .headerImg
 	{
 		display:none;
-	}
+	}*/
 	
 }

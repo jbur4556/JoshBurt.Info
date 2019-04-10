@@ -15,17 +15,18 @@
 	<header>
 		<div id="headerDiv">
 		
-			<span class="mobileOnly" id="dropDownButton">
+			<span class="mobileOnly" id="dropDownButton" onclick="ShowHeaderLinks('headerLinksUL','headerImg','mobileShow','mobileHide')">
 				<div class="hamburger"></div>
 				<div class="hamburger"></div>
 				<div class="hamburger"></div>
 			</span>			
 			
-			<img class="headerImg"src="assets/images/sig.png" alt="Logo">
-			<ul id="headerLinksUL">
-				<a class="headerLinks" onclick="goToSection('sectionTop')">Section 1</a>
-				<a class="headerLinks" onclick="goToSection('section2')">Section 2</a>
-				<a class="headerLinks" onclick="goToSection('section3')">Section 3</a>
+			<img id="headerImg"src="assets/images/sig.png" alt="Logo">
+			<ul id="headerLinksUL" class="mobileHide">
+				<li class="InlineLI"><a id="headerLinkLeft" class="headerLinks" onclick="goToSection('sectionTop')">About Me</a></li>
+				<li class="InlineLI"><a id="headerLinkMid" class="headerLinks" onclick="goToSection('section2')">Experience</a></li>
+				<li class="InlineLI"><a id="headerLinkRight" class="headerLinks" onclick="goToSection('section3')">Projects</a></li>
+				<hr id="underline" />
 			</ul>
 		</div>
 	</header>
@@ -35,7 +36,7 @@
 	
 	<article>
 		<section id="sectionTop">
-			<h1 class="centerBold">BROTHER!!!!!!</h1>
+			<h1 class="centerBold">Hello!!!!!!</h1>
 		</section>
 		<section id="section2">
 			<h1 class="centerBold" style="color:white">Welcome to...</h1>
