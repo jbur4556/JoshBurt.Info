@@ -26,9 +26,9 @@ function moveHeaderUnderline()
         st = 'scrollTop',
         sh = 'scrollHeight';
     var percentage=(h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight);
-	var lerpPercentage=66.66*percentage;
+	var lerpPercentage=66.66*percentage; //percentage = (x-1)/x   x = header links
 	
-	elementStyle.marginLeft=Math.ceil(lerpPercentage) + '%'
+	elementStyle.marginLeft=lerpPercentage + '%'
 	
 	console.log(Math.ceil(lerpPercentage) + '%');
 }
