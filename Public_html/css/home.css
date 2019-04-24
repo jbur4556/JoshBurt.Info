@@ -46,6 +46,28 @@ ul
 	margin:0px;
 }
 
+
+
+div.colums
+{
+	padding:2%;
+	vertical-align:top;
+	display:inline-block;
+	color:white;
+	width:45%;
+}
+
+div.columsParent
+{
+	display:inline-block;
+	width:100%;
+}
+
+h2.center
+{
+	text-align:center;
+}
+
 .centerBold
 {
 	margin:0px;
