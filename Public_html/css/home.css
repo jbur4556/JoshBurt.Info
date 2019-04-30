@@ -63,6 +63,23 @@ div.columsParent
 	width:100%;
 }
 
+div.experiance
+{
+	vertical-align: top;
+	display: inline-block;
+	max-width: 29%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+div.certifications
+{
+	color:white;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
 h2.center
 {
 	text-align:center;
@@ -71,7 +88,7 @@ h2.center
 .centerBold
 {
 	margin:0px;
-	font-size:500%;
+	font-size:350%;
 	text-align:center;
 }
 
@@ -104,6 +121,11 @@ h2.center
 {
 	display:inline-block;
 	width:33%;
+}
+
+.liNoDecorations
+{
+	list-style-type: none;
 }
 
 #underline
