@@ -1,0 +1,137 @@
+*
+{
+	margin:0px;
+	padding:0px;
+}
+
+html
+{
+	scroll-behavior: smooth;	
+}
+
+header
+{
+	position:fixed;
+	width:100%;
+	height:44px;
+	background-color: #313131;
+	opacity: .99;		
+}
+
+body
+{
+	font-family: arial;
+	color:black;
+	background-color: #fafafa;
+	text-align:center;
+}
+
+section
+{
+	padding: 70px 0;
+	border-bottom-style: solid;
+	border-bottom-color: #313131;
+	border-bottom-width: 10px;
+}
+
+footer
+{
+	
+	background: #f2f2f2;
+	color:black;
+	clear:both;
+	color:grey;
+	
+}
+
+h1
+{
+	font-size: 30px;
+}
+
+h4
+{
+	font-size: 10px;
+}
+
+p.center
+{
+	font-weight: bold;
+	font-size: 17px;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.InlineLI
+{
+	display:inline;
+}
+
+#DropDownButton
+{
+	display:none;
+}
+
+#section1
+{
+	padding-top:100px;
+}
+
+#HeaderImage
+{
+	max-height:20px;
+	vertical-align:sub;
+}
+
+.headerlinks
+{
+	color: white;
+	text-decoration: none;
+	padding: 3%;
+}
+
+.roundedBorder
+{
+	margin:auto;
+	max-width: 100px;
+	color: #505050;
+	padding:7px;
+	border: 1px solid #505050;
+	border-radius: 3px;
+}
+
+.headerDiv
+{
+	line-height:44px;  /*Must match min-height in header*/	
+	max-width:1600px;
+	margin:auto;
+}
+
+@media (max-width: 901px)
+{
+	#DropDownButton
+	{
+		display:block;
+		position:relative;
+		float:left;
+		padding-left:5px;
+	}
+	.InlineLI
+	{
+		visibility: hidden;
+		display:block;
+	}	
+	
+	#DropDownsection #DropDownButton:hover .InlineLI
+	{
+		cursor:pointer;
+		visibility:visible;
+	}
+	p.center
+	{
+		max-width: 75%;
+	}
+	
+}
+
+
