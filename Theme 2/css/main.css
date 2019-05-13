@@ -188,11 +188,10 @@ p.center
 		z-index: 1;
 		left: 0;
 		top: 0;
-		background-color: rgb(0,0,0); /* Black fallback color */
-  		background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
- 	 	overflow-x: hidden; /* Disable horizontal scroll */
+		background-color: rgb(0,0,0); 
+  		background-color: rgba(0,0,0, 0.9); 
+ 	 	overflow-x: hidden;
 		transition: 0.5s;
-		/*visibility: hidden;*/
 		display:block;
 	}	
 	#headerLinkList
@@ -207,13 +206,7 @@ p.center
 		font-size: 60px;
 		color:white;
 		display: block;
-	}	
-	
-	#DropDownsection #DropDownButton:hover .InlineLI
-	{
-		cursor:pointer;
-		visibility:visible;
-	}	
+	}		
 }
 
 
