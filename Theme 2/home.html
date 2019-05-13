@@ -12,16 +12,19 @@
 	<header>
 		<div class="headerDiv">
 			<span id="DropDownsection">
-				<span id="DropDownButton">=</span>
+				<a id="DropDownButton" onclick="openNav()">=</a>
 				<img id="HeaderImage" src="assets\images\sigWhite.png" alt="sigBlack">
-				<ul class="InlineLI" id="DropDown">
-					<li class="InlineLI" onclick="goToSection('section1')"><a class="headerlinks">About Me</a></li>
-					<li class="InlineLI" onclick="goToSection('section2')"><a class="headerlinks">Skills</a></li>
-					<li class="InlineLI" onclick="goToSection('section3')"><a class="headerlinks">Experience</a></li>
-					<li class="InlineLI" onclick="goToSection('section4')"><a class="headerlinks">Projects</a></li>
-					<li class="InlineLI" onclick="goToSection('section5')"><a class="headerlinks">Education</a></li>
-					<li class="InlineLI" onclick="goToSection('section6')"><a class="headerlinks">Awards/Certifications</a></li>
-				</ul>
+				<div id="dropDown">
+					<span id="closeDropDownButton" onclick="closeNav()">x</span>
+					<ul class="InlineLI" id="headerLinkList">
+						<li class="InlineLI" onclick="goToSection('section1')"><a class="headerlinks">About Me</a></li>
+						<li class="InlineLI" onclick="goToSection('section2')"><a class="headerlinks">Skills</a></li>
+						<li class="InlineLI" onclick="goToSection('section3')"><a class="headerlinks">Experience</a></li>
+						<li class="InlineLI" onclick="goToSection('section4')"><a class="headerlinks">Projects</a></li>
+						<li class="InlineLI" onclick="goToSection('section5')"><a class="headerlinks">Education</a></li>
+						<li class="InlineLI" onclick="goToSection('section6')"><a class="headerlinks">Awards/Certifications</a></li>
+					</ul>
+				</div>
 			</span>
 		</div>
 	</header>

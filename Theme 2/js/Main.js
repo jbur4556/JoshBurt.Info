@@ -13,6 +13,7 @@ function goToSection(id) //scrolls Bottum of section to Bottum of screen
 
 	BGHilight(element);
 
+	closeNav();
 	/*var col = element.style.backgroundColor;
 	element.style.backgroundColor = "red";
 	setTimeout(function(){element.style.backgroundColor = col;}, 1000);*/
@@ -21,5 +22,15 @@ function goToSection(id) //scrolls Bottum of section to Bottum of screen
 function BGHilight(el)
 {
 	el.style.backgroundColor = BGHighlightColor;
-	setTimeout(function(){el.style.backgroundColor = BGColor;}, 500);
+	setTimeout(function(){el.style.backgroundColor = BGColor;}, 750);
+}
+
+function openNav()
+{
+	document.getElementById("dropDown").style.height = "100%";
+}
+
+function closeNav()
+{
+	document.getElementById("dropDown").style.height = "0%";
 }
