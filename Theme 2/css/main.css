@@ -2,6 +2,7 @@
 {
 	--headerHeight: 44px;
 	--headerMobileSize: 100px;
+	--mobileTextScale: 200%;
 }
 
 *
@@ -142,16 +143,27 @@ p.center
 		padding-bottom: calc(var(--headerMobileSize)*1.5);
 	}
 
-	.InlineLI
+	h1
 	{
-		display: block;
-		height: 150px;
-		font-size: 150%;
+		font-size: calc(var(--mobileTextScale)*2);
+	}
+
+	h2
+	{
+		font-size: var(--mobileTextScale);
 	}
 
 	p.center
 	{
-		max-width: 75%;
+		font-size: var(--mobileTextScale);
+		max-width: 80%;
+	}
+
+	.InlineLI
+	{
+		display: block;
+		height: 150px;
+		font-size: var(--mobileTextScale);
 	}
 
 	#section1
@@ -180,6 +192,7 @@ p.center
 		/*max-height: 100px;*/
 		/*Center verticaly*/
 	}
+
 	#dropDown
 	{
 		width: 100%;
@@ -206,7 +219,8 @@ p.center
 		font-size: 60px;
 		color:white;
 		display: block;
-	}		
+	}	
+
 }
 
 
