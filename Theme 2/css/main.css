@@ -167,7 +167,7 @@ p.center
 		z-index: 1;
 		float:left;
 		color: #fafafa;
-		font-size: 400%;
+		font-size: 500%;
 		padding-left:10px;
 		line-height: var(--headerMobileSize);
 		text-decoration: none;
