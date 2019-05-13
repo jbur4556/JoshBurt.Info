@@ -68,6 +68,12 @@ p.center
 	margin: 0 auto;
 }
 
+.jobTitle
+{
+	font-size: 75%;
+	font-weight: normal;
+}
+
 .InlineLI
 {
 	display:inline;
