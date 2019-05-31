@@ -1,6 +1,11 @@
 var BGColor = "#fafafa"
 var BGHighlightColor = "#aaaaaa";
 
+function goToWebsite(url)
+{
+	window.location.href = url;
+}
+
 function clickSection()
 {
 	window.location.href = ""//needs URL/Direction

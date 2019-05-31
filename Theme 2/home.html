@@ -13,8 +13,8 @@
 		<div class="headerDiv">
 			<span id="DropDownsection">
 				<a id="DropDownButton" onclick="openNav()">=</a>
-				<img id="HeaderImage" src="assets\images\sigWhite.png" alt="sigBlack">
-				<div id="dropDown">
+				<img id="HeaderImage" src="assets/images/sigWhite.png" alt="sigBlack">
+				<span id="dropDown"> <!--Origionaly a Div-->
 					<span id="closeDropDownButton" onclick="closeNav()">x</span>
 					<ul class="InlineLI" id="headerLinkList">
 						<li class="InlineLI" onclick="goToSection('section1')"><a class="headerlinks">About Me</a></li>
@@ -25,7 +25,7 @@
 						<li class="InlineLI" onclick="goToSection('section6')"><a class="headerlinks">Awards/Certifications</a></li>
 						<li class="InlineLI" onclick="goToSection('footer')"><a class="headerlinks">Contact</a></li>
 					</ul>
-				</div>
+				</span>
 			</span>
 		</div>
 	</header>
@@ -50,8 +50,8 @@
 			<p class="center">AD DS, C#, Networking, Computer Management, Computer Assembling and Maintenance, Microsoft Office, Decision Making, Creativity, Teamwork, Time Management, Leadership/Coaching, Organization, Finance/Lending.</p>
 			<br>
 			<div id="skillLogoDiv">
-				<img class="skillsImg" src="assets/images/CSharpIcon.png" alt="c# Logo">
-				<img class="skillsImg" src="assets/images/WordIcon.png" alt="Microsoft Word Logo">
+				<img class="skillsImg" src="assets/images/CSharpIcon.png" alt="c# Logo" onclick="goToWebsite('https://docs.microsoft.com/en-us/dotnet/csharp/')">
+				<img class="skillsImg" src="assets/images/WordIcon.png" alt="Microsoft Word Logo" onclick="goToWebsite('https://products.office.com/en-us/products')">
 			</div>
 			<br>
 		</section>
@@ -63,7 +63,7 @@
 				<h2>Boostability / <span class="jobTitle">IT Service Desk</span></h2>
 				<p>August 2018 - Present, Lehi UT</p>
 				<br>
-				<p class="center">Ensured smooth daily operation of process, services, and systems to maintain a productive environment. Administer email, phone and networking systems. Maintain a high level of service through  an understanding of the ITIL process.</p>
+				<p class="center">Ensure smooth daily operation of process, services, and systems to maintain a productive environment. Administer email, phone and networking systems. Maintain a high level of service through  an understanding of the ITIL process.</p>
 				<br>
 				
 				<h2>Mountain America Credit Union / <span class="jobTitle">Assistant Branch Manager</span></h2>
@@ -97,6 +97,13 @@
 				<li>Inventory System</li>
 				<li>Lots More to Come!</li>
 			</ul>
+			<br>
+			<p>Check out our <a href="https://github.com/NnJ-b/GiantsBay">GitHub</a> for more information.</p>
+			<br>
+			<br>
+			<h2>JoshBurt.Info</h2>
+			<br>
+			<p class="center">To see the HTML/CSS/JS go to my <a href="https://github.com/jbur4556/JoshBurt.Info">GitHub.</a></p>
 		</section>
 
 		<section id="section5">
@@ -121,10 +128,10 @@
 			<p class="center">CompTIA A+, CIW Site Development Associate, CIW User Interface Designer, CIW Advanced HTML5 and CSS Specialist, Notary Public, Medallion Guarantee , NMLS, Eagle Scout, Venture Scout President</p>		
 			<br>
 			<div id="certificationLogoDiv">
-				<img class="inlineImage" src="assets\images\APlus.png" alt="CompTIA A+">
-				<img class="inlineImage" src="assets\images\AdvHTML5&CSS3_sp.jpg" alt="CIW HTML5 & CSS">
-				<img class="inlineImage" src="assets\images\site_dev_assoc.jpg" alt="CIW Site Development Associate">
-				<img class="inlineImage" src="assets\images\UserInterface_sp.jpg" alt="CIT User Interface Design">
+				<img class="inlineImage" src="assets/images/APlus.png" alt="CompTIA A+" onclick="goToWebsite('https://certification.comptia.org/certifications/a')">
+				<img class="inlineImage" src="assets/images/AdvHTML5&CSS3_sp.jpg" alt="CIW HTML5 & CSS" onclick="goToWebsite('https://www.ciwcertified.com/ciw-certifications/web-and-mobile-design-series/advanced-html5-and-css3-specialist')">
+				<img class="inlineImage" src="assets/images/site_dev_assoc.jpg" alt="CIW Site Development Associate" onclick="goToWebsite('https://www.ciwcertified.com/ciw-certifications/web-foundations-series/site-development-associate')">
+				<img class="inlineImage" src="assets/images/UserInterface_sp.jpg" alt="CIT User Interface Design" onclick="goToWebsite('https://www.ciwcertified.com/ciw-certifications/web-and-mobile-design-series/user-interface-designer')">
 			</div>			
 		</section>
 		
@@ -137,7 +144,8 @@
 			<address>Email: <a href="mailto:josh@joshburt.info">Josh@JoshBurt.info</a></address>
 		</div>
 		<br>
-		<p>Some icons where provided by <a href="https://icons8.com/" alt=Icons8">Icons8</a></p>
+		<p>Some icons where provided by <a href="https://icons8.com/">Icons8</a></p>
+		<br>
 	</footer>
 
 </body>
