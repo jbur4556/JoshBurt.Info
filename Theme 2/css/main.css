@@ -86,6 +86,12 @@ p.center
 	border-radius: 3px;
 }
 
+.skillsImg
+{
+	display:inline-block;
+	height: 100%;
+}
+
 .headerDiv
 {
 	line-height:var(--headerHeight);  /*Must match min-height in header*/	
@@ -138,6 +144,10 @@ p.center
 }
 
 #certificationLogoDiv
+{
+	height:150px;	
+}
+#skillLogoDiv
 {
 	height:150px;
 }
