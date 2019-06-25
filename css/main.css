@@ -54,6 +54,7 @@ footer
 h1
 {
 	font-size: 30px;
+	text-decoration: underline;
 }
 
 h4
