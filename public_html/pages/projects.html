@@ -1,0 +1,90 @@
+<!doctype HTML>
+<html lang = "en">
+<head>
+	<meta charset = "utf-8">
+	<title>Josh Burt</title> 
+	<meta name = "description" content = "Josh Burt's Portfolio Page">
+	<link type = "text/css" rel = "stylesheet" href = "../css/main.css">
+	<script src="../js/main.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="headerDiv">
+			<span id="DropDownsection">
+				<a id="DropDownButton" onclick="openNav()">=</a>
+				<a href="../home.html" alt="home"><img id="HeaderImage" src="../assets/images/sigWhite.png" alt="sigBlack"></a>
+				<span id="dropDown"> <!--Origionaly a Div-->
+					<span id="closeDropDownButton" onclick="closeNav()">x</span>
+					<ul class="InlineLI" id="headerLinkList">
+						<!--Highlight Section-->
+						<!--
+						<li class="InlineLI" onclick="goToSection('section1')"><a class="headerlinks">About Me</a></li>
+						<li class="InlineLI" onclick="goToSection('section2')"><a class="headerlinks">Skills</a></li>
+						<li class="InlineLI" onclick="goToSection('section3')"><a class="headerlinks">Experience</a></li>
+						<li class="InlineLI" onclick="goToSection('section4')"><a class="headerlinks">Projects</a></li>
+						<li class="InlineLI" onclick="goToSection('section5')"><a class="headerlinks">Education</a></li>
+						<li class="InlineLI" onclick="goToSection('section6')"><a class="headerlinks">Awards/Certifications</a></li>
+						<li class="InlineLI" onclick="goToSection('footer')"><a class="headerlinks">Contact</a></li>
+						-->
+						<!--Page Section-->
+						<li class="InlineLI" ><a href="aboutMe.html" class="headerlinks">About Me</a></li>
+						<li class="InlineLI" ><a href="skills.html" class="headerlinks">Skills</a></li>
+						<li class="InlineLI" ><a href="experience.html" class="headerlinks">Experience</a></li>
+						<li class="InlineLI" ><a href="projects.html" class="headerlinks">Projects</a></li>
+						<li class="InlineLI" ><a href="education.html" class="headerlinks">Education</a></li>
+						<li class="InlineLI" ><a href="certs.html" class="headerlinks">Awards/Certifications</a></li>
+						<li class="InlineLI" ><a href="contact.html" class="headerlinks">Contact</a></li>
+					</ul>
+				</span>
+			</span>
+		</div>
+	</header>
+
+	
+	<article>
+		<section id="section1">
+			<h1>Projects</h1>	
+			<br>
+			<h2>Giants Bay</h2>
+			<br>
+			<img class="slides" src="../assets/images/giantsbay/1.png" alt="Giants Bay 1" onclick="moveSlide(+1)">
+			<img class="slides" src="../assets/images/giantsbay/2.png" alt="Giants Bay 2" onclick="moveSlide(+1)">
+			<img class="slides" src="../assets/images/giantsbay/3.png" onload="showSlide(1)" alt="Giants Bay 3" onclick="moveSlide(+1)">
+			<br>
+			<button class="button" onclick="moveSlide(-1)">&#10094; Prev</button>
+			<button class="button" onclick="moveSlide(+1)">Next &#10095;</button>
+
+			<br><br>
+			<p class="center">Giants bay is a Mobile RPG game designed in Unity Engine and writen in C#.<br><b>Click below to view code snippets:</b></p>	
+			<div class="listView">	
+			<sl>
+				<li onclick="window.open('../codeSnipits/landmassGen.txt')">Procedual Landmass Generation</li>
+				<li onclick="window.open('../codeSnipits/colision.txt')">Custom Colision Detection</li>
+				<li onclick="window.open('../codeSnipits/colision.txt')">Inverse Kinematics and Traditional KeyFrame Animation</li>
+				<li onclick="window.open('../codeSnipits/inventory.txt')">Inventory System</li>
+				<li>Lots More to Come!</li>
+			</sl>
+			</div>
+			<br>
+			<p><b>Download the alpha <a href="../assets/giantsbay/GiantsBay_Setup.exe" download>here</a>.</b></p>
+		</section>
+		<section id="section2">
+			<h2>JoshBurt.Info</h2>
+			<br>
+			<p class="center">To see the HTML/CSS/JS go to my <a href="https://github.com/jbur4556/JoshBurt.Info">GitHub</a>.</p>
+		</section>
+	</article>
+
+	<footer id="footer">
+		<br>
+		<div>
+			<h3>Contact</h3>
+			<address>Email: <a href="mailto:josh@joshburt.info">Josh@JoshBurt.info</a></address>
+		</div>
+		<br>
+		<p>Some icons where provided by <a href="https://icons8.com/">Icons8</a></p>
+		<br>
+	</footer>
+
+</body>

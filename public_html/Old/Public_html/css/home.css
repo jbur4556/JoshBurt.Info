@@ -1,0 +1,293 @@
+:root
+{
+	--sectionSize: 90vh;
+	--headerSize: 10vh;
+	--halfHeaderSize: 5vh;
+}
+
+body, html
+{
+	height: 100%;
+}
+
+html
+{
+	scroll-behavior: smooth;	
+}
+
+body
+{
+	margin:0px;
+	background: white;
+	color: black;
+}
+
+header
+{
+	position:fixed;
+	width:100%;
+	height:var(--headerSize);
+	background-color: #E2E2E2;
+}
+
+section
+{
+	height:var(--sectionSize);
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	/*background-size:auto 100%;*/
+	background-size: cover;
+}
+
+ul
+{
+	margin:0px;
+}
+
+
+
+div.colums
+{
+	padding:2%;
+	vertical-align:top;
+	display:inline-block;
+	color:white;
+	width:45%;
+}
+
+div.columsParent
+{
+	display:inline-block;
+	width:100%;
+}
+
+div.experiance
+{
+	vertical-align: top;
+	display: inline-block;
+	max-width: 29%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+div.certifications
+{
+	color:white;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+h2.center
+{
+	text-align:center;
+}
+
+.centerBold
+{
+	margin:0px;
+	font-size:350%;
+	text-align:center;
+}
+
+.hamburger
+{
+	width: calc(var(--headerSize)/2);
+	height: calc(var(--headerSize)/10);
+	background-color: black;
+	margin: calc(var(--headerSize)/25) 0;
+}
+
+.headerLinks
+{
+	color:black;
+	text-decoration: none;
+	font-size:150%;
+}
+
+.headerLinks:hover
+{
+	color: #a0a0a0;
+}
+
+.mobileOnly
+{
+	display:none;
+}
+
+.InlineLI
+{
+	display:inline-block;
+	width:33%;
+}
+
+.liNoDecorations
+{
+	list-style-type: none;
+}
+
+#underline
+{
+	/*bottom:3%;*/
+	height: .3rem;
+	width: 33%;
+	margin: -.3rem;
+	background: black;
+	border: none;
+	margin-left:0%;
+}
+
+#headerImg
+{		
+	position:absolute;
+	height:100%;
+	left:0%;
+}
+
+#headerDiv
+{
+	height:100%;
+	text-align:center;
+}
+
+#headerLinksUL
+{
+	height:100%;
+	max-width: 850px;
+	margin:0 auto;
+	padding:0px;
+	line-height:var(--headerSize);
+}
+
+#headerLinkLeft
+{
+	margin-left:0%;
+}
+
+#headerLinkRight
+{
+	margin-right:0%;
+}
+
+#dropDownButton
+{
+	display:none;
+	float:left;
+}
+
+#sectionTop
+{	
+	padding-top:var(--headerSize); /*Match Header height if fixed*/
+	
+	background-image: url(../assets/images/sig.png);
+	background-color: #247BA0;	
+}
+
+#section2
+{
+	background-image: url(../assets/images/sigBlack.png);
+	background-color: #F15025;	
+}
+
+
+#section3
+{
+	background-image: url(../assets/images/sig.png);
+	background-color: #0A2463;	
+}
+
+#GBGif
+{
+	display:block;
+	width:50%;
+	min-width:150px;
+	max-width:500px;
+	margin:0 auto;
+}
+
+#gitHubLink
+{
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	color:white;
+	margin:0px;
+	font-size:250%;
+	text-align:center;
+}
+
+@media(max-width:1030px)
+{
+	section
+	{
+		background-attachment: scroll;
+		background-position: center;
+		background-repeat: repeat;
+	}	
+
+	
+	#headerImg
+	{
+		position:static;
+		float:none;
+		display:block;
+		height:100%;
+		margin-left:auto;
+		margin-right:auto;
+	}	
+	
+	#headerImg.mobileHide
+	{
+		display:none;
+	}
+	
+	#headerLinksUL
+	{
+		display:none; 	
+	}
+	
+	#dropDownDiv
+	{
+		width:100%;
+		display:inline-block;
+	}
+	
+	#dropDownButton
+	{
+		height:100%;
+		display:inline-block;
+		position:absolute;
+		left:2%;
+		margin-top:2.7vh  /* (headerHeight/2) - (hamburger.margin*2 + hamburger.height + hamburger.height/2) */
+	}
+	
+	#headerLinksUL.mobileShow
+	{
+		display:block;
+		background-color:#E2E2E2;
+		width:auto;
+	}
+
+	#underline
+	{
+		display:none;
+	}	
+}
+
+@supports (-ms-accelerator:true) /*if Edge 12-15*/
+{
+	#underline
+	{
+		display:none;
+	}
+}
+
+@supports (-ms-ime-align:auto)  /*if Edge 16+*/
+{
+    #underline
+	{
+		display:none;
+	}
+}

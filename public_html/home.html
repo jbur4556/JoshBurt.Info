@@ -1,0 +1,169 @@
+<!doctype HTML>
+<html lang = "en">
+<head>
+	<meta charset = "utf-8">
+	<title>Josh Burt</title> 
+	<meta name = "description" content = "Josh Burt's Portfolio Page">
+	<link type = "text/css" rel = "stylesheet" href = "css/main.css">
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="headerDiv">
+			<span id="DropDownsection">
+				<a id="DropDownButton" onclick="openNav()">=</a>
+				<a href="home.html" alt="home"><img id="HeaderImage" src="assets/images/sigWhite.png" alt="sigBlack"></a>
+				<span id="dropDown"> <!--Origionaly a Div-->
+					<span id="closeDropDownButton" onclick="closeNav()">x</span>
+					<ul class="InlineLI" id="headerLinkList">
+						<!--Highlight Section-->
+						<!--
+						<li class="InlineLI" onclick="goToSection('section1')"><a class="headerlinks">About Me</a></li>
+						<li class="InlineLI" onclick="goToSection('section2')"><a class="headerlinks">Skills</a></li>
+						<li class="InlineLI" onclick="goToSection('section3')"><a class="headerlinks">Experience</a></li>
+						<li class="InlineLI" onclick="goToSection('section4')"><a class="headerlinks">Projects</a></li>
+						<li class="InlineLI" onclick="goToSection('section5')"><a class="headerlinks">Education</a></li>
+						<li class="InlineLI" onclick="goToSection('section6')"><a class="headerlinks">Awards/Certifications</a></li>
+						<li class="InlineLI" onclick="goToSection('footer')"><a class="headerlinks">Contact</a></li>
+						-->
+						<!--Page Section-->
+						<li class="InlineLI" ><a href="pages/aboutMe.html" class="headerlinks">About Me</a></li>
+						<li class="InlineLI" ><a href="pages/skills.html" class="headerlinks">Skills</a></li>
+						<li class="InlineLI" ><a href="pages/experience.html" class="headerlinks">Experience</a></li>
+						<li class="InlineLI" ><a href="pages/projects.html" class="headerlinks">Projects</a></li>
+						<li class="InlineLI" ><a href="pages/education.html" class="headerlinks">Education</a></li>
+						<li class="InlineLI" ><a href="pages/certs.html" class="headerlinks">Awards/Certifications</a></li>
+						<li class="InlineLI" onclick="goToSection('footer')"><a class="headerlinks">Contact</a></li>
+					</ul>
+				</span>
+			</span>
+		</div>
+	</header>
+
+	
+	<article>
+		<section id="section1">
+			<!--<div class="roundedBorder">
+				<p>About Me</p>
+			</div>-->
+			<br>
+			<h1 onclick="goToWebsite('pages/aboutMe.html')">Hello!<br>I'm Josh</h1>
+			<br>
+				<img id="roundedImage" src="assets/images/Avatar.jpg" alt="Avatar" style="
+				border-radius: 50%;
+				max-width: 15%;
+				min-width: 300px;">
+			<br>
+			<br>
+			<p class="center">I am looking for a career where I can learn and grow my skills in Software development. I am a hardworking individual, with a drive to better myself every day.</p>
+			<br>
+			<!--<p>Click here to learn more!</p>-->
+		</section>
+		
+		<section id="section2">
+			<h1 onclick="goToWebsite('pages/skills.html')">Skills</h1>
+			<br>
+			<p class="center">AD DS, C#, Networking, Computer Management, Computer Assembling and Maintenance, Microsoft Office, Decision Making, Creativity, Teamwork, Time Management, Leadership/Coaching, Organization, Finance/Lending.</p>
+			<br>
+			<div id="skillLogoDiv">
+				<img class="skillsImg" src="assets/images/CSharpIcon.png" alt="c# Logo" onclick="goToWebsite('https://docs.microsoft.com/en-us/dotnet/csharp/')">
+				<img class="skillsImg" src="assets/images/WordIcon.png" alt="Microsoft Word Logo" onclick="goToWebsite('https://products.office.com/en-us/products')">
+			</div>
+			<br>
+		</section>
+
+		<section id="section3">
+				<h1 onclick="goToWebsite('pages/experience.html')">Experience</h1>
+				<br>
+
+				<h2>Boostability / <span class="jobTitle">IT Service Desk</span></h2>
+				<p>August 2018 - Present, Lehi UT</p>
+				<br>
+				<p class="center">Ensure smooth daily operation of process, services, and systems to maintain a productive environment. Administer email, phone and networking systems. Maintain a high level of service through  an understanding of the ITIL process.</p>
+				<br>
+				
+				<h2>Mountain America Credit Union / <span class="jobTitle">Assistant Branch Manager</span></h2>
+				<p>August 2015 -August 2018, Riverton UT</p>
+				<br>
+				<p class="center">Exemplified company values and philosophy while fulfilling responsibilities as a leader in the branch and the credit union. Coached staff and ensured quality customer/member service within branch operations. Created and maintained employee's schedules and branch certifications.</p>
+				<br>
+
+				<h2>Honda World / <span class="jobTitle">Senior Sales</span></h2>
+				<p>February 2015 - August 2015, South Jordan UT</p>
+				<br>
+				<p class="center">Maintained a culture of progress as well as keeping drive and motivation high. Coached other members of the sales team to ensure high sales volume. Maintained website and KSL ads to expand customer base and communicate events to current customers. Sold/closed my own deals as well as those of other team members.</p>
+				<br>
+
+				<h2>Sports Authority / <span class="jobTitle">Senior Sales</span></h2>
+				<p>August 2014 – February 2015, Sandy UT</p>
+				<br>
+				<p class="center">Ensured the team’s product knowledge and expertise in the following areas: Ski Shop, Fitness and wearable technology. Maintained a positive and professional culture and environment. Provided quality service to customers and team members.</p>
+		</section>
+
+		<section id="section4">
+			<h1 onclick="goToWebsite('pages/projects.html')">Projects</h1>	
+			<br>
+			<h2>Giants Bay</h2>
+			<br>
+			<p class="center">Giants bay is a Mobile RPG game designed in Unity Engine and writen in C#. Features of the game include:</p>		
+			<ul>
+				<li>Procedual Landmass Generation</li>
+				<li>Custom Colision Detection</li>
+				<li>Inverse Kinematics and Traditional KeyFrame Animation</li>
+				<li>Inventory System</li>
+				<li>Lots More to Come!</li>
+			</ul>
+			<br>
+			<p>Click <a href="pages/projects.html">here</a> for more information</p>
+			<br>
+			<br>
+			<h2>JoshBurt.Info</h2>
+			<br>
+			<p class="center">To see the HTML/CSS/JS go to my <a href="https://github.com/jbur4556/JoshBurt.Info">GitHub.</a></p>
+		</section>
+
+		<section id="section5">
+			<h1 onclick="goToWebsite('pages/education.html')">Education</h1>	
+			<br>
+			<h2>WGU / <span class="jobTitle">IT Software Development</span></h2>
+			<p>May 2018 - Current, Salt Lake City UT</p>
+			<br>
+
+			<h2>Utah Valley University / <span class="jobTitle">ESM, Firefighting</span></h2>
+			<p>August 2015 - February 2016, Orem UT</p>
+			<br>
+
+			<h2>Southern Utah University / <span class="jobTitle">Biology</span></h2>
+			<p>August 2013 - February 2015, Cedar City UT</p>
+			<br>		
+		</section>
+		
+		<section id="section6">
+			<h1 onclick="goToWebsite('pages/certs.html')">Awards and Certifications</h1>	
+			<br>
+			<p class="center">CompTIA A+, CIW Site Development Associate, CIW User Interface Designer, CIW Advanced HTML5 and CSS Specialist, ITIL® IT Service Management, Notary Public, Medallion Guarantee, NMLS, Eagle Scout</p>		
+			<br>
+			<div id="certificationLogoDiv">
+				<img class="inlineImage" src="assets/images/APlus.png" alt="CompTIA A+" onclick="window.open('assets/certs/CompTIAA+cecertificate.pdf')">
+				<img class="inlineImage" src="assets/images/AdvHTML5&CSS3_sp.jpg" alt="CIW HTML5 & CSS" onclick="window.open('assets/certs/HTML5&CSS3Specialist.pdf')">
+				<img class="inlineImage" src="assets/images/site_dev_assoc.jpg" alt="CIW Site Development Associate" onclick="window.open('assets/certs/SiteDevelopmentAssociate.pdf')">
+				<img class="inlineImage" src="assets/images/UserInterface_sp.jpg" alt="CIW User Interface Design" onclick="window.open('assets/certs/UserINterfaceDesigner.pdf')">
+				<img class="inlineImage" src="assets/images/ITIL_Logo.png" alt="ITIL® Foundation Certificate in IT Service Management" onclick="window.open('assets/certs/e-Cert.pdf	')">
+			</div>			
+		</section>
+		
+	</article>
+
+	<footer id="footer">
+		<br>
+		<div>
+			<h3>Contact</h3>
+			<address>Email: <a href="mailto:josh@joshburt.info">Josh@JoshBurt.info</a></address>
+		</div>
+		<br>
+		<p>Some icons where provided by <a href="https://icons8.com/">Icons8</a></p>
+		<br>
+	</footer>
+
+</body>
