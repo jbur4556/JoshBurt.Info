@@ -5,7 +5,7 @@ var slide = 1;
 
 function goToWebsite(url)
 {
-	window.location.href = url;
+	window.location.href = url;s
 }
 
 function clickSection()
@@ -44,7 +44,7 @@ function closeNav()
 
 function moveSlide(n)
 {
-	showSlide(slide +=1);
+	showSlide(slide += n);
 }
 
 function showSlide(n)
